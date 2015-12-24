@@ -197,11 +197,6 @@ public class FindController {
             }  
         );  
         t.start();
-//        ModelAndView tempView =  new ModelAndView("/InfoCard");
-//		tempView.addObject("Info", temp);
-//		tempView.addObject("time", endDate);
-//		tempView.addObject("title", "寻找走失儿童");
-//		return tempView;  
         response.sendRedirect("infoCard.htm?id="+temp.getId()+"&type=find");
     }
 }
